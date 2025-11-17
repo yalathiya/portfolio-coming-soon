@@ -1,0 +1,155 @@
+.blog-page {
+  width: 100%;
+  padding-bottom: 4rem;
+}
+
+.blog-header {
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+
+.blog-header h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #00d4ff 0%, #0f3460 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blog-subtitle {
+  font-size: 1.25rem;
+  color: #6b6b6b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog-filters {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.search-input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+
+.tag-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.tag-filter {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-filter:hover {
+  transform: translateY(-2px);
+}
+
+.blog-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog-item {
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.blog-item:hover {
+  border-color: #00d4ff;
+  box-shadow: 0 8px 24px rgba(0, 212, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.blog-item-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #6b6b6b;
+  margin-bottom: 0.75rem;
+}
+
+.blog-item-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #1a1a2e;
+  transition: color 0.2s ease;
+}
+
+.blog-item-title:hover {
+  color: #00d4ff;
+}
+
+.blog-item-excerpt {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+}
+
+.blog-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.blog-item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.read-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #00d4ff;
+  transition: gap 0.3s ease;
+}
+
+.read-more-link:hover {
+  gap: 0.75rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 0;
+  color: #6b6b6b;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .blog-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .blog-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .blog-item-title {
+    font-size: 1.5rem;
+  }
+
+  .blog-item-excerpt {
+    font-size: 1rem;
+  }
+
+  .blog-item-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

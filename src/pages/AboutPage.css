@@ -1,0 +1,152 @@
+.about-page {
+  width: 100%;
+  padding-bottom: 4rem;
+}
+
+.about-hero {
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #00d4ff 0%, #0f3460 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-subtitle {
+  font-size: 1.25rem;
+  color: #6b6b6b;
+  font-weight: 500;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bio-card {
+  margin-bottom: 3rem;
+  border: 1px solid #e0e0e0;
+}
+
+.bio-content {
+  padding: 2.5rem;
+}
+
+.bio-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+}
+
+.bio-content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  color: #4a4a4a;
+}
+
+.interests-detail {
+  margin-bottom: 3rem;
+}
+
+.interests-detail h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+}
+
+.interests-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.interest-detail-card {
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.interest-detail-card:hover {
+  border-color: #00d4ff;
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.15);
+}
+
+.interest-detail-content {
+  padding: 2rem;
+}
+
+.interest-detail-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #1a1a2e;
+}
+
+.interest-detail-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+}
+
+.contact-cta {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(255, 107, 107, 0.05) 100%);
+  border-radius: 12px;
+}
+
+.contact-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.contact-cta p {
+  font-size: 1.125rem;
+  color: #6b6b6b;
+  margin-bottom: 2rem;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  min-width: 150px;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .bio-content,
+  .interest-detail-content {
+    padding: 1.5rem;
+  }
+
+  .bio-content h2,
+  .interests-detail h2,
+  .contact-cta h2 {
+    font-size: 1.75rem;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+  }
+
+  .social-btn {
+    width: 100%;
+  }
+}

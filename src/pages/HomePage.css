@@ -11,7 +11,7 @@
 /* Hero Section */
 .hero-section {
   padding: 6rem 0 4rem;
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(255, 107, 107, 0.05) 100%);
+  background: linear-gradient(135deg, var(--shadow-primary-light) 0%, var(--shadow-accent-light) 100%);
 }
 
 .hero-content {
@@ -23,7 +23,7 @@
   font-size: 4rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #00d4ff 0%, #0f3460 100%);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -31,14 +31,14 @@
 
 .hero-subtitle {
   font-size: 1.75rem;
-  color: #4a4a4a;
+  color: var(--color-text-body);
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .hero-tagline {
   font-size: 1.25rem;
-  color: #6b6b6b;
+  color: var(--color-text-muted);
   margin-bottom: 2.5rem;
   line-height: 1.6;
 }
@@ -50,14 +50,14 @@
 }
 
 .cta-button {
-  background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   border: none;
 }
 
 .cta-button:hover {
-  background: linear-gradient(135deg, #0099cc 0%, #006699 100%);
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, #006699 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 8px 16px var(--shadow-primary-heavy);
   transition: all 0.3s ease;
 }
 
@@ -70,7 +70,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 2.5rem;
-  color: #1a1a2e;
+  color: var(--color-text-dark);
 }
 
 .interests-grid {
@@ -80,15 +80,15 @@
 }
 
 .interest-card {
-  border: 2px solid #e0e0e0;
+  border: 2px solid var(--color-border-light);
   transition: all 0.3s ease;
   cursor: default;
 }
 
 .interest-card:hover {
-  border-color: #00d4ff;
+  border-color: var(--color-primary);
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 212, 255, 0.15);
+  box-shadow: 0 8px 24px var(--shadow-primary-heavy);
 }
 
 .interest-content {

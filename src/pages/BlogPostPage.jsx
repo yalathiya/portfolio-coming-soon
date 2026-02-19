@@ -7,7 +7,7 @@ import rehypeHighlight from 'rehype-highlight';
 import rehypeRaw from 'rehype-raw';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
-import { blogPosts } from '../data/mockData';
+import { blogPosts } from '../data/blogPosts';
 import './BlogPostPage.css';
 import 'highlight.js/styles/atom-one-dark.css';
 
@@ -33,7 +33,7 @@ const BlogPostPage = () => {
           setLoading(false);
         });
     }
-  }, [post]);
+  }, [slug]);
 
   if (!post) {
     return (

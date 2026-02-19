@@ -12,7 +12,7 @@
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #00d4ff 0%, #0f3460 100%);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -20,7 +20,7 @@
 
 .projects-subtitle {
   font-size: 1.25rem;
-  color: #6b6b6b;
+  color: var(--color-text-muted);
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
@@ -35,14 +35,14 @@
 
 .project-card-page {
   overflow: hidden;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--color-border-light);
   transition: all 0.3s ease;
 }
 
 .project-card-page:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-  border-color: #00d4ff;
+  box-shadow: 0 12px 32px var(--shadow-dark-heavy);
+  border-color: var(--color-primary);
 }
 
 .project-image-page {
@@ -50,7 +50,7 @@
   width: 100%;
   height: 250px;
   overflow: hidden;
-  background: #e0e0e0;
+  background: var(--color-border-light);
 }
 
 .project-image-page img {
@@ -68,14 +68,14 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: #00d4ff;
-  color: #ffffff;
+  background: var(--color-primary);
+  color: var(--color-bg-white);
   font-weight: 600;
 }
 
 .project-title-page {
   font-size: 1.5rem;
-  color: #1a1a2e;
+  color: var(--color-text-dark);
   margin-bottom: 0.5rem;
 }
 

@@ -4,7 +4,9 @@ import { ArrowRight, Code, Database, Server, Layers } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
-import { profileData, blogPosts, projects } from '../data/mockData';
+import { profileData } from '../data/profileData';
+import { blogPosts } from '../data/blogPosts';
+import { projects } from '../data/projects';
 import './HomePage.css';
 
 const HomePage = () => {

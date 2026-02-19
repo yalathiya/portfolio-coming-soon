@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Input } from '../components/ui/input';
-import { blogPosts } from '../data/mockData';
+import { blogPosts } from '../data/blogPosts';
 import './BlogPage.css';
 
 const BlogPage = () => {
@@ -65,30 +65,30 @@ const BlogPage = () => {
         <div className="blog-list">
           {filteredPosts.length > 0 ? (
             filteredPosts.map(post => (
-              <Card key={post.id} className="blog-item">
-                <CardHeader>
-                  <div className="blog-item-meta">
-                    <span className="blog-date">{post.date}</span>
-                    <span className="blog-read-time">{post.readTime}</span>
-                  </div>
-                  <Link to={`/blog/${post.id}`}>
-                    <CardTitle className="blog-item-title">{post.title}</CardTitle>
-                  </Link>
-                  <CardDescription className="blog-item-excerpt">{post.excerpt}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="blog-item-footer">
-                    <div className="blog-item-tags">
-                      {post.tags.map(tag => (
-                        <Badge key={tag} variant="outline">{tag}</Badge>
-                      ))}
+              <Link key={post.id} to={`/blog/${post.id}`} className="blog-item-link">
+                <Card className="blog-item">
+                  <CardHeader>
+                    <div className="blog-item-meta">
+                      <span className="blog-date">{post.date}</span>
+                      <span className="blog-read-time">{post.readTime}</span>
                     </div>
-                    <Link to={`/blog/${post.id}`} className="read-more-link">
-                      Read More <ArrowRight size={16} />
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
+                    <CardTitle className="blog-item-title">{post.title}</CardTitle>
+                    <CardDescription className="blog-item-excerpt">{post.excerpt}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="blog-item-footer">
+                      <div className="blog-item-tags">
+                        {post.tags.map(tag => (
+                          <Badge key={tag} variant="outline">{tag}</Badge>
+                        ))}
+                      </div>
+                      <div className="read-more-link">
+                        Read More <ArrowRight size={16} />
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))
           ) : (
             <div className="no-results">

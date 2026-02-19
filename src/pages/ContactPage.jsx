@@ -2,7 +2,7 @@ import React from 'react';
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
-import { profileData } from '../data/mockData';
+import { profileData } from '../data/profileData';
 import './ContactPage.css';
 
 const ContactPage = () => {

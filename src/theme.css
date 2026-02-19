@@ -1,0 +1,60 @@
+/* Global Theme & Color Variables */
+
+:root {
+  /* Primary Colors */
+  --color-primary: #00d4ff;
+  --color-primary-dark: #0099cc;
+  --color-primary-light: #00f0ff;
+  
+  /* Secondary Colors */
+  --color-secondary: #0f3460;
+  --color-secondary-dark: #05182a;
+  
+  /* Accent Colors */
+  --color-accent-red: #ff6b6b;
+  --color-accent-pink: #d6336c;
+  
+  /* Text Colors */
+  --color-text-dark: #1a1a2e;
+  --color-text-body: #4a4a4a;
+  --color-text-muted: #6b6b6b;
+  --color-text-very-dark: #333333;
+  --color-text-light-gray: #999999;
+  
+  /* Background Colors */
+  --color-bg-white: #ffffff;
+  --color-bg-light-gray: #f8f9fa;
+  --color-bg-lighter-gray: #f5f5f5;
+  --color-bg-dark: #1a1a2e;
+  --color-bg-code-dark: #282c34;
+  
+  /* Border & Divider Colors */
+  --color-border-light: #e0e0e0;
+  --color-border-primary: #00d4ff;
+  
+  /* Code Colors */
+  --color-code-text: #abb2bf;
+  
+  /* Gradient Colors */
+  --gradient-primary: linear-gradient(135deg, #00d4ff 0%, #0f3460 100%);
+  --gradient-accent: linear-gradient(135deg, #00d4ff 0.05, #ff6b6b 0.05);
+  
+  /* Shadow Colors (with opacity) */
+  --shadow-dark-light: rgba(0, 0, 0, 0.08);
+  --shadow-dark-medium: rgba(0, 0, 0, 0.12);
+  --shadow-dark-heavy: rgba(0, 0, 0, 0.15);
+  --shadow-primary-light: rgba(0, 212, 255, 0.05);
+  --shadow-primary-medium: rgba(0, 212, 255, 0.1);
+  --shadow-primary-heavy: rgba(0, 212, 255, 0.15);
+  --shadow-primary-extra-heavy: rgba(0, 212, 255, 0.2);
+  --shadow-secondary-light: rgba(15, 52, 96, 0.1);
+  --shadow-accent-light: rgba(255, 107, 107, 0.05);
+}
+
+/* Light theme (default) */
+:root {
+  --color-page-bg: var(--color-bg-white);
+  --color-page-text: var(--color-text-dark);
+  --color-footer-bg: var(--color-bg-dark);
+  --color-footer-text: var(--color-bg-white);
+}

@@ -1,6 +1,6 @@
 .footer {
-  background: #1a1a2e;
-  color: #ffffff;
+  background: var(--color-bg-dark);
+  color: var(--color-bg-white);
   padding: 3rem 0 1.5rem;
   margin-top: 4rem;
 }
@@ -27,7 +27,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #00d4ff;
+  color: var(--color-primary);
 }
 
 .footer-logo-icon {
@@ -48,7 +48,7 @@
 }
 
 .footer-column h4 {
-  color: #00d4ff;
+  color: var(--color-primary);
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1rem;

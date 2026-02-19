@@ -5,7 +5,7 @@
   right: 0;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--color-border-light);
   z-index: 1000;
   transition: background 0.3s ease;
 }
@@ -25,18 +25,18 @@
   gap: 0.75rem;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--color-text-dark);
   transition: color 0.2s ease;
 }
 
 .logo:hover {
-  color: #00d4ff;
+  color: var(--color-primary);
 }
 
 .logo-icon {
   width: 28px;
   height: 28px;
-  color: #00d4ff;
+  color: var(--color-primary);
 }
 
 .nav {

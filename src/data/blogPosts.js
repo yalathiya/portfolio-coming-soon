@@ -1,5 +1,15 @@
 export const blogPosts = [
   {
+    id: "ai-agents-might-take-your-job",
+    title: "LLMs won't take your job, but AI agents might",
+    excerpt: "I recently explored the research paper “LLM-Based Agents for Software Engineering” - and what it outlines is not just a technical evolution, it’s an existential shift.",
+    date: "2025-12-01",
+    readTime: "3 min read",
+    tags: ["AI", "AI Agents", "SDLC", "Software Engineer"],
+    markdownFile: "ai-agents-might-take-your-job.md",
+    published: true
+  },
+  {
     id: "understanding-database-indexes",
     title: "Understanding Database Indexes: B-Trees vs LSM-Trees",
     excerpt: "A deep dive into how different database index structures work and when to use each one for optimal performance.",
@@ -7,7 +17,7 @@ export const blogPosts = [
     readTime: "8 min read",
     tags: ["Database", "Performance", "Data Structures"],
     markdownFile: "understanding-database-indexes.md",
-    published: true
+    published: false
   },
   {
     id: "low-latency-communication",
@@ -17,7 +27,7 @@ export const blogPosts = [
     readTime: "12 min read",
     tags: ["System Design", "Performance", "Networking"],
     markdownFile: "low-latency-communication.md",
-    published: true
+    published: false
   },
   {
     id: "microservices-patterns",
@@ -27,7 +37,7 @@ export const blogPosts = [
     readTime: "10 min read",
     tags: ["Microservices", "Backend", "Architecture"],
     markdownFile: "microservices-patterns.md",
-    published: true
+    published: false
   },
   {
     id: "postgres-query-optimization",
@@ -37,6 +47,6 @@ export const blogPosts = [
     readTime: "15 min read",
     tags: ["PostgreSQL", "Database", "Optimization"],
     markdownFile: "postgres-query-optimization.md",
-    published: true
+    published: false
   }
 ];

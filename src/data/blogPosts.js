@@ -1,5 +1,15 @@
 export const blogPosts = [
   {
+    id: "orms-fail-when-complexity-hit",
+    title: "Unpopuler Opinion: ORMs Fail When Complexity Hits",
+    excerpt: "If you ever doubt whether a specific problem should be solved using Raw SQL or an ORM, trust me - Raw SQL will be better option.",
+    date: "2026-01-01",
+    readTime: "4 min read",
+    tags: ["Database Internals", "ORMs", "Performance"],
+    markdownFile: "orms-fail-when-complexity-hit.md",
+    published: true
+  },
+  {
     id: "ai-agents-might-take-your-job",
     title: "LLMs won't take your job, but AI agents might",
     excerpt: "I recently explored the research paper “LLM-Based Agents for Software Engineering” - and what it outlines is not just a technical evolution, it’s an existential shift.",

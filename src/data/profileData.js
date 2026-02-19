@@ -10,7 +10,7 @@ export const profileData = {
     "Backend Development"
   ],
   social: {
-    github: "https://github.com/yalathiy",
+    github: "https://github.com/yalathiya",
     linkedin: "https://www.linkedin.com/in/yash-a-lathiya",
     email: "yalathiya.it@gmail.com"
   }

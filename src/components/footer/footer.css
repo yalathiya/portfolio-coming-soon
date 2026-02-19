@@ -73,7 +73,7 @@
 }
 
 .footer-column a:hover {
-  color: #00d4ff;
+  color: var(--color-primary);
 }
 
 .social-icon {

@@ -49,7 +49,7 @@
   position: relative;
   font-size: 1rem;
   font-weight: 500;
-  color: #4a4a4a;
+  color: var(--color-text-body);
   transition: color 0.2s ease;
   padding: 0.5rem 0;
 }
@@ -61,13 +61,13 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #00d4ff;
+  background: var(--color-primary);
   transition: width 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #00d4ff;
+  color: var(--color-primary);
 }
 
 .nav-link.active::after {
@@ -102,7 +102,7 @@
     flex-direction: column;
     gap: 0;
     padding: 1rem 0;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--color-border-light);
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;

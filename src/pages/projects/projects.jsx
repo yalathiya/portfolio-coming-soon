@@ -1,10 +1,10 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
-import { Badge } from '../components/ui/badge';
-import { Button } from '../components/ui/button';
-import { projects } from '../data/projects';
-import './ProjectsPage.css';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../components/ui/card';
+import { Badge } from '../../components/ui/badge';
+import { Button } from '../../components/ui/button';
+import { projects } from '../../data/projects';
+import './projects.css';
 
 const ProjectsPage = () => {
   return (

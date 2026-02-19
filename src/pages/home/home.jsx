@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Code, Database, Server, Layers } from 'lucide-react';
-import { Button } from '../components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
-import { Badge } from '../components/ui/badge';
-import { profileData } from '../data/profileData';
-import { blogPosts } from '../data/blogPosts';
-import { projects } from '../data/projects';
-import './HomePage.css';
+import { Button } from '../../components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../components/ui/card';
+import { Badge } from '../../components/ui/badge';
+import { profileData } from '../../data/profileData';
+import { blogPosts } from '../../data/blogPosts';
+import { projects } from '../../data/projects';
+import './home.css';
 
 const HomePage = () => {
   const featuredPosts = blogPosts.filter(post => post.published).slice(0, 3);
@@ -113,26 +113,28 @@ const HomePage = () => {
           </div>
           <div className="blog-grid">
             {featuredPosts.map((post) => (
-              <Card key={post.id} className="blog-card">
-                <CardHeader>
-                  <div className="blog-meta">
-                    <span className="blog-date">{post.date}</span>
-                    <span className="blog-read-time">{post.readTime}</span>
-                  </div>
-                  <CardTitle className="blog-title">{post.title}</CardTitle>
-                  <CardDescription>{post.excerpt}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="blog-tags">
-                    {post.tags.map((tag) => (
-                      <Badge key={tag} variant="outline">{tag}</Badge>
-                    ))}
-                  </div>
-                  <Link to={`/blog/${post.id}`} className="read-more">
-                    Read More <ArrowRight size={16} />
-                  </Link>
-                </CardContent>
-              </Card>
+              <Link key={post.id} to={`/blog/${post.id}`} className="blog-card-link">
+                <Card className="blog-card">
+                  <CardHeader>
+                    <div className="blog-meta">
+                      <span className="blog-date">{post.date}</span>
+                      <span className="blog-read-time">{post.readTime}</span>
+                    </div>
+                    <CardTitle className="blog-title">{post.title}</CardTitle>
+                    <CardDescription>{post.excerpt}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="blog-tags">
+                      {post.tags.map((tag) => (
+                        <Badge key={tag} variant="outline">{tag}</Badge>
+                      ))}
+                    </div>
+                    <div className="read-more-link">
+                      Read More <ArrowRight size={16} />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>

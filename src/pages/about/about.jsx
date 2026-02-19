@@ -1,9 +1,9 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import { Button } from '../components/ui/button';
-import { Card, CardContent } from '../components/ui/card';
-import { profileData } from '../data/profileData';
-import './AboutPage.css';
+import { Button } from '../../components/ui/button';
+import { Card, CardContent } from '../../components/ui/card';
+import { profileData } from '../../data/profileData';
+import './about.css';
 
 const AboutPage = () => {
   return (

@@ -1,16 +1,16 @@
 import React from 'react';
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
-import { Card, CardContent } from '../components/ui/card';
-import { Button } from '../components/ui/button';
-import { profileData } from '../data/profileData';
-import './ContactPage.css';
+import { Card, CardContent } from '../../components/ui/card';
+import { Button } from '../../components/ui/button';
+import { profileData } from '../../data/profileData';
+import './contact.css';
 
 const ContactPage = () => {
   const contactMethods = [
     {
       icon: Github,
       label: 'GitHub',
-      value: '@yalathiy',
+      value: '@yalathiya',
       link: profileData.social.github,
       color: '#333333'
     },

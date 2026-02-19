@@ -5,10 +5,10 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeRaw from 'rehype-raw';
-import { Button } from '../components/ui/button';
-import { Badge } from '../components/ui/badge';
-import { blogPosts } from '../data/blogPosts';
-import './BlogPostPage.css';
+import { Button } from '../../components/ui/button';
+import { Badge } from '../../components/ui/badge';
+import { blogPosts } from '../../data/blogPosts';
+import './blogpost.css';
 import 'highlight.js/styles/atom-one-dark.css';
 
 const BlogPostPage = () => {

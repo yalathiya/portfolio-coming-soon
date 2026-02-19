@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Github, Linkedin, Mail, Code } from 'lucide-react';
-import './Footer.css';
+import { profileData } from '../../data/profileData';
+import './footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,19 +36,19 @@ const Footer = () => {
               <h4>Connect</h4>
               <ul className="social-links">
                 <li>
-                  <a href="https://github.com/yalathiy" target="_blank" rel="noopener noreferrer">
+                  <a href={profileData.social.github} target="_blank" rel="noopener noreferrer">
                     <Github className="social-icon" />
                     GitHub
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/yash-a-lathiya" target="_blank" rel="noopener noreferrer">
+                  <a href={profileData.social.linkedin} target="_blank" rel="noopener noreferrer">
                     <Linkedin className="social-icon" />
                     LinkedIn
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:yalathiya.it@gmail.com">
+                  <a href={`mailto:${profileData.social.email}`}>
                     <Mail className="social-icon" />
                     Email
                   </a>

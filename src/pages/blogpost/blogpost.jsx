@@ -35,6 +35,30 @@ const BlogPostPage = () => {
     }
   }, [slug]);
 
+  // Scroll to the post title when the post loads or slug changes
+  useEffect(() => {
+    // Wait for layout to settle so the element position is correct,
+    // then scroll so the title sits *below* the fixed header.
+    const scrollToTitle = () => {
+      const titleEl = document.querySelector('.post-title');
+      if (!titleEl) return;
+
+      // Measure header height (if present) to offset the scroll position
+      const headerEl = document.querySelector('.header');
+      const headerHeight = headerEl ? headerEl.getBoundingClientRect().height : 0;
+
+      const titleRect = titleEl.getBoundingClientRect();
+      const targetY = window.scrollY + titleRect.top - headerHeight - 12; // 12px breathing room
+
+      window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+    };
+
+    // rAF + small timeout to ensure styles/layout applied (images/fonts)
+    let rafId = requestAnimationFrame(() => setTimeout(scrollToTitle, 20));
+
+    return () => cancelAnimationFrame(rafId);
+  }, [slug]);
+
   if (!post) {
     return (
       <div className="blog-post-page">

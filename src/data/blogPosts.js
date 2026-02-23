@@ -20,43 +20,23 @@ export const blogPosts = [
     published: true
   },
   {
-    id: "understanding-database-indexes",
-    title: "Understanding Database Indexes: B-Trees vs LSM-Trees",
-    excerpt: "A deep dive into how different database index structures work and when to use each one for optimal performance.",
-    date: "2025-01-15",
-    readTime: "8 min read",
-    tags: ["Database", "Performance", "Data Structures"],
-    markdownFile: "understanding-database-indexes.md",
-    published: false
+    id: "Why_Netflix_Bet_on_CockroachDB",
+    title: "Why Netflix Bet on CockroachDB (Technical Breakdown)",
+    excerpt: "Are you using right database for your application? Or just relying on maybe what you dont know perfectly.",
+    date: "2025-12-15",
+    readTime: "2 min read",
+    tags: ["System Design", "Database", "Performance", "Backend"],
+    markdownFile: "Why_Netflix_Bet_on_CockroachDB.md",
+    published: true
   },
   {
-    id: "low-latency-communication",
-    title: "Achieving Low Latency in Distributed Systems",
-    excerpt: "Techniques and patterns for building ultra-low latency communication systems including TCP optimizations and zero-copy strategies.",
-    date: "2025-01-10",
-    readTime: "12 min read",
-    tags: ["System Design", "Performance", "Networking"],
-    markdownFile: "low-latency-communication.md",
-    published: false
-  },
-  {
-    id: "microservices-patterns",
-    title: "Essential Microservices Patterns Every Backend Engineer Should Know",
-    excerpt: "Explore critical patterns like Circuit Breaker, Saga, and API Gateway that are essential for building robust microservices architectures.",
-    date: "2025-01-05",
+    id: "Choosing_right_way_to_connect_server_and_client",
+    title: "Choose the Right Way to Connect the Server & Frontend ",
+    excerpt: "Have you ever been stuck deciding the best way to connect your server with the frontend? Should you go for APIs, WebSockets, or something else?",
+    date: "2025-02-01",
     readTime: "10 min read",
-    tags: ["Microservices", "Backend", "Architecture"],
-    markdownFile: "microservices-patterns.md",
-    published: false
-  },
-  {
-    id: "postgres-query-optimization",
-    title: "PostgreSQL Query Optimization Techniques",
-    excerpt: "Learn how to analyze and optimize PostgreSQL queries using EXPLAIN, proper indexing strategies, and query rewriting techniques.",
-    date: "2024-12-28",
-    readTime: "15 min read",
-    tags: ["PostgreSQL", "Database", "Optimization"],
-    markdownFile: "postgres-query-optimization.md",
-    published: false
+    tags: ["System Design", "Communication", "Performance", "Backend", "Server", "Frontend"],
+    markdownFile: "Choose_Right_Way_Server_Frontend.md",
+    published: true
   }
 ];
